@@ -9,6 +9,7 @@ Created by Jack Branch
 1. Clone the project `git clone https://github.com/JingusJohn/craft-gpt-v2`
 2. `cd` into the project directory.
 3. Run the project with `npm run start`
+  - Requires a Minecraft account
   - Must have Node.js version >= 14
   - Must have a valid `.env` configuration. See [here](#configuration-options)
 
