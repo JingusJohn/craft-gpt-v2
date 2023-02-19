@@ -7,22 +7,26 @@ Created by Jack Branch
 ## Usage
 
 1. Clone the project `git clone https://github.com/JingusJohn/craft-gpt-v2`
-2. Run the project with `put command here`
+2. `cd` into the project directory.
+3. Run the project with `npm run start`
   - Must have Node.js version >= 14
-  - Must have a valid `.env` configuration. See here <- make this a link
+  - Must have a valid `.env` configuration. See [here](#configuration-options)
 
 ## Technologies Utilized
 - Node with Typescript
 - [Mineflayer](https://github.com/PrismarineJS/mineflayer)
 - [Zod](https://zod.dev) for validation of configuration
+- [OpenAI API](https://openai.com/api/) with the official [npm package](https://openai.com/api/)
 
 ## Configuration Options
 
 You must configure your project using a `.env` file in the project directory or
 renaming the empty one included in the project. It shows what all things can be configured
-but you can also read more about that here. Required fields are in **bold**.
+but you can also read more about that here. Optional fields have default values. If there
+is no indicated default, then the option is mandatory. You will get build errors if they
+are neglected.
 
-### **Server** `.env/SERVER`
+### Server `.env/SERVER`
 
 This option is where you set the hostname of the server. For local use, use "localhost".
 
@@ -38,7 +42,7 @@ This option sets the password of the bot.
 
 This option sets the API key for authenticating with OpenAI.
 
-### Wake Message `.env/WAKE_MSG`
+### Wake Message `.env/WAKE_MSG` *default* 
 
 This option sets the message that the bot sends when it connects to the server. This is
 useful for testing that your bot is connecting properly. It's also useful for adding personality
