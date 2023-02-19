@@ -1,0 +1,34 @@
+{
+  "name": "craft-gpt-v2",
+  "version": "1.0.0",
+  "description": "ChatGPT chatbot for minecraft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JingusJohn/craft-gpt-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JingusJohn/craft-gpt-v2/issues"
+  },
+  "homepage": "https://github.com/JingusJohn/craft-gpt-v2#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mineflayer": "^4.8.1",
+    "openai": "^3.1.0",
+    "prismarine-registry": "^1.7.0",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
+  }
+}
