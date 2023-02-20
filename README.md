@@ -1,4 +1,4 @@
-# craft-gpt-v2
+# Craft GPT v2
 
 This allows a bot to join your minecraft server and communicate on behalf of the ChatGPT API.
 
