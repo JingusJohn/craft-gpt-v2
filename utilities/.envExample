@@ -1,0 +1,21 @@
+# ESSENTIAL (you must fill these yourself. There are no defaults)
+
+SERVER=""
+USERNAME=""
+PASSWORD=""
+API_KEY="" # OpenAI API key
+
+
+# OPTIONAL (defaults listed if they exist)
+#  uncomment them and configure if you wish. More info on README.me
+
+# PORT=25565
+# WAKE_MSG="" # None by default
+# COMMAND="GPT:"
+# MAX_TOKENS=100
+# AUTH="microsoft"
+# VERSION="" # None by default
+# PROMPT_PREFIX="This is a minecraft question."
+# PROMPT_SUFFIX="" # Empty by default
+# ADDRESS_PLAYER="off"
+# DEBUG="off"

@@ -4,9 +4,10 @@
   "description": "ChatGPT chatbot for minecraft",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "help": "echo 'npm run start' to run the project. 'npm run create_env' to create an empty .env file",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/main.js"
+    "start": "npm run build && node build/main.js",
+    "create_env": "cp utilities/.envExample ./ && mv .envExample .env"
   },
   "repository": {
     "type": "git",

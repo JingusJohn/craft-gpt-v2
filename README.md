@@ -8,10 +8,18 @@ Created by Jack Branch
 
 1. Clone the project `git clone https://github.com/JingusJohn/craft-gpt-v2`
 2. `cd` into the project directory.
-3. Run the project with `npm run start`
+3. Install dependencies with `npm install`
+4. Create an unconfigured `.env` file with `npm run create_env`
+  - Requires the following:
+    - SERVER
+    - USERNAME
+    - PASSWORD
+    - API_KEY
+  - Info on other configuration options [here](#configuration-options).
+5. Run the project with `npm run start`
   - Requires a Minecraft account
   - Must have Node.js version >= 14
-  - Must have a valid `.env` configuration. See [here](#configuration-options)
+  - Must have a valid `.env` configuration. See [here](#configuration-options).
 
 ## Technologies Utilized
 - Node with Typescript
@@ -27,13 +35,17 @@ but you can also read more about that here. Optional fields have default values.
 is no indicated default, then the option is mandatory. You will get build errors if they
 are neglected.
 
+You can create a `.env` file using the command `npm run create_env`. This will create a `.env`
+file with all of the configurable properties listed.
+
 ### Server `.env/SERVER`
 
 This option is where you set the hostname of the server. For local use, use "localhost".
 
 ### **Username** `.env/USERNAME`
 
-This option sets the username of the bot.
+This option sets the username of the bot. If using microsoft for authentication(microsoft is
+the default), this username can be an email. _Note: email may become its own property layer on_
 
 ### **Password** `.env/PASSWORD`
 
@@ -42,6 +54,10 @@ This option sets the password of the bot.
 ### **API Key** `.env/API_KEY`
 
 This option sets the API key for authenticating with OpenAI.
+
+### Port `.env/PORT` *default* 25565
+
+This option allows you to set the port at which the bot will attempt to connect.
 
 ### Wake Message `.env/WAKE_MSG` *default* 
 
@@ -96,16 +112,11 @@ influence the AI's attitude. You can ask it to insult you for example.
 This option is similar to the prefix but instead of being prepended to the question string, it
 will be appended to the question string. This can also be used for adding context or attitude.
 
-### Address Player `.env/ADDRESS_PLAYER` *default* false
+### Address Player `.env/ADDRESS_PLAYER` *default* "false"
 
-If true, "Address me as `username`. " will be prepended to the question string. This way you can
+If `"true"`, "Address me as `username`. " will be prepended to the question string. This way you can
 get more personalized output since the bot can address the player by name.
 
-### Bot Nickname Command`.env/BOT_NICKNAME_CMD` *default* none
+### Debug Mode `.env/DEBUG` *default* "off"
 
-This allows user to set a nickname configuration to the Bot on wake. Since nickname plugins can
-vary some in usage, for this value, you would set a string for the command. Example:
-
-```
-BOT_NICKNAME_CMD="/nick GPT"
-```
+If `"on"`, the AI will address the user by their username at the beginning of the response.

@@ -8,6 +8,9 @@ export const makeBotOptions = (configurations: Config): BotOptions => {
     password: configurations.PASSWORD,
     auth: configurations.AUTH
   };
+  if (configurations.PORT) {
+    botOptions.port = configurations.PORT;
+  }
   if (configurations.VERSION) {
     botOptions.version = configurations.VERSION;
   }
