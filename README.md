@@ -20,6 +20,7 @@ Created by Jack Branch
   - Requires a Minecraft account
   - Must have Node.js version >= 14
   - Must have a valid `.env` configuration. See [here](#configuration-options).
+6. Ctrl+C to stop the server.
 
 ## Technologies Utilized
 - Node with Typescript
