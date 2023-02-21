@@ -4,8 +4,6 @@ This allows a bot to join your minecraft server and communicate on behalf of the
 
 Created by Jack Branch
 
-[![wakatime](https://wakatime.com/badge/github/JingusJohn/craft-gpt-v2.svg)](https://wakatime.com/badge/github/JingusJohn/craft-gpt-v2)
-
 ## Usage
 
 1. Clone the project `git clone https://github.com/JingusJohn/craft-gpt-v2`
